@@ -1,5 +1,6 @@
 let http = require('http')
 let url = require('url');
+let fs = require('fs')
 let query_string = require('querystring')
 require('dotenv').config();
 
@@ -8,14 +9,31 @@ let respond_route = (req, res, params)=>{
    res.end(params);
 }
 
+let read_file_name = (file_path, res)=>{
+   fs.access(file_path, fs.F_OK, (err)=>{
+      if(err){
+         res.end("File not found")
+      }
+      else{
+         fs.readFile(file_path, (err, data)=>{
+            if(err) throw err;
+            else{
+               res.end(data);
+            }
+         })
+      }
+   })
+}
+
 let routes = {
    'GET': {
-      '/home' : (req, res)=>{
-         let file_path = __dirname + '/home'
-         respond_route(req, res, file_path);
+      '/index.html' : (req, res, routhPath)=>{
+         let file_path = __dirname + routhPath.pathname
+         // respond_route(req, res, file_path);
+         read_file_name(file_path, res)
       },
-      '/index.html': (req, res)=>{
-         let file_path = __dirname + '/index.html';
+      '/index': (req, res, routhPath)=>{
+         let file_path = __dirname + routhPath.pathname;
          respond_route(req, res, file_path);
       }
    },

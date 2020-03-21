@@ -2,7 +2,7 @@
   "name": "advance_nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "Server_GET_POST.js",
+  "main": "Server_Read_Ext_File.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "qr-image": "^3.2.0"
   }
 }
