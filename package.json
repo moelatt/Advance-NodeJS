@@ -2,7 +2,7 @@
   "name": "advance_nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "Server_Read_Ext_File.js",
+  "main": "39_Mongo_Find_Data.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -13,8 +13,17 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "qr-image": "^3.2.0"
+    "hogan-express": "^0.5.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.5",
+    "multer": "^1.4.2",
+    "node-gyp": "^6.1.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "qr-image": "^3.2.0",
+    "socket.io": "^2.3.0"
   }
 }
