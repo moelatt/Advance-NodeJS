@@ -1,0 +1,27 @@
+[
+   {
+      "id" : "1",
+      "name": "Kyaw Kyaw",
+      "image": "kyaw.png" 
+   },
+   {
+      "id" : "2",
+      "name": "Mg Mg",
+      "image": "mg.png" 
+   },
+   {
+      "id" : "3",
+      "name": "Aung Aung",
+      "image": "aung.png" 
+   },
+   {
+      "id" : "4",
+      "name": "Yan Naing",
+      "image": "yan.png" 
+   },
+   {
+      "id" : "5",
+      "name": "Thein Sein",
+      "image": "thein.png" 
+   }
+]

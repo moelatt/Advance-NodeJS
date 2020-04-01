@@ -27,6 +27,7 @@ let insert_data = (obj)=>{
       else{
          let db_obj = instance.db('ourdata');
          db_obj.collection('my_data').insertMany(obj, (err, res)=>check_error(err, res));
+         
       }
       
    })
