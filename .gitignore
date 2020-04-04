@@ -1,6 +1,8 @@
 node_modules/
+.env
 HTML/
 img/
 test.txt
 css/
 views/
+Mongoose_Project/.env
