@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-Back-End-Server": {
+    "Angular-Front-End-Project": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular-Back-End-Server",
+            "outputPath": "dist/Angular-Front-End-Project",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-Back-End-Server:build"
+            "browserTarget": "Angular-Front-End-Project:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular-Back-End-Server:build:production"
+              "browserTarget": "Angular-Front-End-Project:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-Back-End-Server:build"
+            "browserTarget": "Angular-Front-End-Project:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular-Back-End-Server:serve"
+            "devServerTarget": "Angular-Front-End-Project:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular-Back-End-Server:serve:production"
+              "devServerTarget": "Angular-Front-End-Project:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Angular-Back-End-Server"
+  "defaultProject": "Angular-Front-End-Project"
 }
